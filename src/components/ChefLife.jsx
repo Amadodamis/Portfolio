@@ -3,7 +3,7 @@
 function ChefLife() {
     return (
         <div>
-           <h1>Chef life</h1>
+           <h1>Proyectos como CHEF</h1>
         </div>
 
     );

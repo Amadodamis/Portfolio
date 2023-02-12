@@ -9,9 +9,9 @@ import ChefLife from './components/ChefLife';
 function App() {
   return (
     <div className="App-main">
-
+        <br/>
         <Header/>
-
+        <br/>
         <Banner/>
 
         <Proyectos/>
