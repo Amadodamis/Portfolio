@@ -1,18 +1,19 @@
+import React from "react";
 import "../css/HeaderStyle.css"
 
 function Header() {
   return (
-    <div className="menu">
+    <nav className="nav-style">
+      <h2 className="nombre">AMADO <span className="apellido">DAMIS</span></h2>
 
-        
-        <p className="titulo">Proyectos</p>
-       
-        <p className="titulo">Gastronomia</p>
-        
-        <p className="titulo"> Curriculum</p>
-        
-        
-    </div>
+      <ul>
+        <li><a href="/">Proyectos</a></li>
+        <li><a href="/">Gastronomia</a></li>
+        <li><a href="/">Curriculum</a></li>
+        <li><a href="/">Linkedin</a></li>
+        <li><a href="/">Github</a></li>
+      </ul>
+    </nav>
   );
 }
 
