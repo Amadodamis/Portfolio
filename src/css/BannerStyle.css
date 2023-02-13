@@ -6,10 +6,6 @@
 }
 
 
-.nombre {
-   
-}
-
 .container-lorem {
     border: red 1px solid;
     margin: 0 auto;
@@ -26,6 +22,9 @@
 
 .texto{
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 500;
 }
 
 

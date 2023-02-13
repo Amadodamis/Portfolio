@@ -3,33 +3,37 @@
 display: flex;
 align-items: center;
 justify-content: space-between;
-padding-top: 20px;
+padding-top: 0px;
 padding-left: 10%;
 padding-right: 10%;
+background-color: #282c34;
     
 }
 
 .nombre{
     color: white;
     font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    margin: 15px;
 }
 .apellido{
     color:#ea1538;
 }
 
-nav ul li{
+.li-header-style{
     list-style-type:none;
     display: inline-block;
     padding:10px 20px;
 }
 
-nav ul li a {
+.a-header-style {
+    font-family: 'Montserrat', sans-serif;
     color:white;
     text-decoration: none;
     font-weight: bold;
 }
 
-nav ul li a:hover{
+.a-header-style:hover{
     color:#ea1538;
     transition:.3s
 }
