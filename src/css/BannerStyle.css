@@ -1,8 +1,8 @@
-.texto{
+.texto {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    font-style: italic;
-    font-weight: 500;
+    font-weight: 600;
+    color: #282c34;
 }
 
 .Banner {
@@ -12,8 +12,8 @@
     margin-top: 25px;
 }
 
-.titulo-banner{
-    color:#282c34;
+.titulo-banner {
+    color: #282c34;
     font-size: 50px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
@@ -26,15 +26,16 @@
 
 /*     Basico */
 
-.container-foto-cv{
+.container-foto-cv {
     width: 500px;
     height: 500px;
 }
-.foto{
+
+.foto {
     border-radius: 50%;
 }
 
-.container-texto{
+.container-texto {
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -12,10 +12,9 @@ function Banner() {
             <div className='container-foto-cv'>{fotoUser}</div>
 
             <div className="container-texto">
-
+            
                 <h2 className="titulo-banner">About</h2>
-               
-                <p>{texto} </p>
+                <p className="texto">{texto} </p>
 
             </div>
 

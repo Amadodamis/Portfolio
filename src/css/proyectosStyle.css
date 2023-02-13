@@ -1,12 +1,10 @@
 .proyectos-style{
-  
-   margin-bottom: 20px;
     margin-top: 30px;
     margin-left: 10px;
     margin-right: 10px;
     text-align: center;
     border-radius: 11%;
-    background-color: #282c34;    
+    
 }
 
 
@@ -27,7 +25,7 @@
    .titulo{
     font-family: 'Roboto', sans-serif;
        color: white;
-       font-size: 28px;  
+       font-size: 40px;  
    }
    
    .span-title-proyects{
@@ -67,3 +65,19 @@ color: #ea1538;
 transition: 0.3s;
 }
 /*  ******************************************** */
+
+.texto-proyect{
+        margin-bottom: 10;
+        margin-left: 45px;
+        margin-right: 45px;
+        font-size: 15px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        color: #282c34;
+        text-align: left;
+}
+
+.primeraLetra{
+    font-size: 25px;
+    color: #ea1538;
+}
