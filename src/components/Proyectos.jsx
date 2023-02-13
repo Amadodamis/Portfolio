@@ -7,20 +7,25 @@ function Proyectos(props) {
 
 
     return (
-        <div >
+        <div className="proyectos-style" >
 
-            <h1 className="titulo">PROYECTOS COMO {profesion} </h1>
+            <h2 className="titulo">PROYECTOS COMO <span className="span-title-proyects">{profesion}</span> </h2>
+
+            <nav className="nav-proyects">
+
+                <ul className="ul-proyects">
+                    <li className="li-proyects">  <a href="/" className="a-proyects">{proyecto1}</a> </li>
+                    <li className="li-proyects"> <a href="/"  className="a-proyects">{proyecto2}</a></li>
+                    <li className="li-proyects"><a href="/"  className="a-proyects">{proyecto3}</a></li>
+                    <li className="li-proyects"><a href="/"  className="a-proyects">{proyecto4}</a></li>
+                </ul>
+
+            </nav>
+
+
 
             <article className="container-menu">
 
-                <div className="menu-container">
-                    <ul >
-                        <li>{proyecto1} </li>
-                        <li>{proyecto2}</li>
-                        <li>{proyecto3}</li>
-                        <li>{proyecto4}</li>
-                    </ul>
-                </div>
 
                 <div className="container-buttons-preview">
 
@@ -37,6 +42,7 @@ function Proyectos(props) {
 
 
             </article>
+            <br/>
 
 
         </div>

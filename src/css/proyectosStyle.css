@@ -1,9 +1,14 @@
+.proyectos-style{
+  
+   margin-bottom: 20px;
+    margin-top: 30px;
+    text-align: center;
+    
+}
+
 
 .titulo{
-    padding-left: 10%;
-    padding-right: 10%;
-    color: white;
-    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container-menu{
@@ -13,24 +18,14 @@
     padding-right: 10%;
 }
 
-.menu-container{
-    width: 20%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;  
-}
-
-
 
 .container-buttons-preview{
- 
+
     display: flex;
     margin: 0;
-
+    justify-content: center;
 
 }
-
 
 
 
@@ -45,23 +40,6 @@
 }
 
 
-
-/* UNSTYLING UL*//* UNSTYLING UL*//* UNSTYLING UL*//* UNSTYLING UL*/
-
-ul li{
-    list-style-type:none;
-    margin: 0;
-    padding: 0;
-  
-}
-
- ul li {
-    margin: 0;
-    padding: 0;
-    color:white;
-    text-decoration: none;
-    font-weight: bold;
-}
 
 /* UNSTYLING UL*//* UNSTYLING UL*//* UNSTYLING UL*//* UNSTYLING UL*/
 
@@ -155,3 +133,47 @@ button{
     opacity: 1;
     right: 0;
    }
+
+   /*                   TITLE               */
+
+   .titulo{
+       color: #282c34;
+       font-size: 28px;  
+   }
+   
+   .span-title-proyects{
+       color: #ea1538;
+   }
+
+
+
+   /* PROYECTS*/
+
+.nav-proyects{
+    border: 1px red solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-decoration: none;
+}
+
+.li-proyects{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+
+}
+
+.a-proyects{
+color:#282c34;
+text-decoration: none;
+font-weight: bold;
+}
+
+.a-proyects:hover{
+color: #ea1538;
+transition: 0.3s;
+}
