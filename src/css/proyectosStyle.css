@@ -2,31 +2,12 @@
   
    margin-bottom: 20px;
     margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
     text-align: center;
-    
+    border-radius: 11%;
+    background-color: #282c34;    
 }
-
-
-.titulo{
-    font-family: 'Roboto', sans-serif;
-}
-
-.container-menu{
-    display: flex;
-    justify-content: center;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-
-.container-buttons-preview{
-
-    display: flex;
-    margin: 0;
-    justify-content: center;
-
-}
-
 
 
 .container-preview{
@@ -39,105 +20,13 @@
     height: 100%;
 }
 
+  
 
-
-/* UNSTYLING UL*//* UNSTYLING UL*//* UNSTYLING UL*//* UNSTYLING UL*/
-
-
-
-
-button{
-    height: 50px;
-}
-
-/*Buttonnnnnnn LEFT*/
-.button-left {
-    display: inline-block;
-    border-radius: 4px;
-    background-color: #ea1538;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 17px;
-    padding: 16px;
-    width: 130px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-   }
-   
-   .span-left {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-   }
-   
-   .span-left:after {
-    content: '«';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -15px;
-    transition: 0.5s;
-   }
-   
-   .button-left:hover .span-left {
-    padding-right: 15px;
-   }
-   
-   .button-left:hover .span-left:after {
-    opacity: 1;
-    right: 0;
-   }
-
-
-   /*Buttonnnnnnn RIGHT*/
-
-   .button-right {
-    display: inline-block;
-    border-radius: 4px;
-    background-color: #ea1538;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 17px;
-    padding: 16px;
-    width: 130px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-   }
-   
-   .span-right{
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-   }
-   
-   .span-right:after {
-    content: '»';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -15px;
-    transition: 0.5s;
-   }
-   
-   .button-right:hover .span-right {
-    padding-right: 15px;
-   }
-   
-   .button-right:hover .span-right:after {
-    opacity: 1;
-    right: 0;
-   }
-
-   /*                   TITLE               */
+   /*    ********               TITLE     **********          */
 
    .titulo{
-       color: #282c34;
+    font-family: 'Roboto', sans-serif;
+       color: white;
        font-size: 28px;  
    }
    
@@ -147,14 +36,12 @@ button{
 
 
 
-   /* PROYECTS*/
+/* nav PROYECTS*/
 
 .nav-proyects{
-    border: 1px red solid;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 20px;
     padding-left: 10%;
     padding-right: 10%;
     text-decoration: none;
@@ -168,7 +55,9 @@ button{
 }
 
 .a-proyects{
-color:#282c34;
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    font-weight: bold;
 text-decoration: none;
 font-weight: bold;
 }
@@ -177,3 +66,4 @@ font-weight: bold;
 color: #ea1538;
 transition: 0.3s;
 }
+/*  ******************************************** */
