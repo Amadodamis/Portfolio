@@ -7,8 +7,6 @@ function Proyectos(props) {
     const { profesion,identificator, 
         proyectsName} = props;
    
-    
-    
 
 
     //html 

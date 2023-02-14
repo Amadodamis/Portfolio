@@ -8,22 +8,25 @@ import Proyectos from './components/Proyectos';
 
 function App() {
 
-  //let proyectosDesarrolador = ["Fabastore", "Instagram Dashboard"]
+  let proyectosDesarrolador = ["Fabastore", "Instagram Dashboard"]
   let proyectosCheff = ["Cocinero", "Panadero", "Pastelero"]
 
-  
+
+
 
   return (
     <div className="App-main">
 
       <Header />
       <Banner />
+      <Proyectos profesion={"DESARROLLADOR"} identificator={"developer"}
+        proyectsName={proyectosDesarrolador}
+      />
 
-      
       <Proyectos
         profesion={"CHEFF"} identificator={"cheff"}
         proyectsName={proyectosCheff}
-        
+
       />
 
     </div>

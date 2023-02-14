@@ -21,10 +21,11 @@ function Slider(props) {
     return () => clearInterval(interval);
   }, [activeIndex]);
 
+
   return (
     <div className="slider-container">
 
-      <SliderContent activeIndex={activeIndex} sliderImage={sliderCocinero} />
+<SliderContent activeIndex={activeIndex} sliderImage={sliderCocinero} />
 
       <Arrows
         prevSlide={() =>
@@ -44,3 +45,8 @@ function Slider(props) {
 }
 
 export default Slider;
+
+/*
+<SliderContent activeIndex={activeIndex} sliderImage={sliderCocinero} />
+
+*/
