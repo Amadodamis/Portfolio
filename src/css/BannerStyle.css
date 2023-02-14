@@ -2,18 +2,18 @@
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    color: #282c34;
+    color: var(--primary-color);
 }
 
 .Banner {
     display: flex;
+    padding-top: 115px;
     margin-left: 30px;
     margin-right: 30px;
-    margin-top: 25px;
 }
 
 .titulo-banner {
-    color: #282c34;
+    color: var(--primary-color);
     font-size: 50px;
     font-family: 'Roboto', sans-serif;
     text-align: center;

@@ -29,7 +29,7 @@
    }
    
    .span-title-proyects{
-       color: #ea1538;
+       color: var(--secondary-color);
    }
 
 
@@ -61,7 +61,7 @@ font-weight: bold;
 }
 
 .a-proyects:hover{
-color: #ea1538;
+color: var(--secondary-color);
 transition: 0.3s;
 }
 /*  ******************************************** */
@@ -73,11 +73,11 @@ transition: 0.3s;
         font-size: 15px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
-        color: #282c34;
+        color: var(--primary-color);
         text-align: left;
 }
 
 .primeraLetra{
     font-size: 25px;
-    color: #ea1538;
+    color: var(--secondary-color);
 }

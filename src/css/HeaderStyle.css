@@ -1,3 +1,16 @@
+.header{	
+	position: fixed;
+    height: 90px;
+    width: 100%;
+    top: 0;
+    left: 0;
+	z-index: 1;
+    transition: .3s ease-in;
+    overflow: hidden;
+    background-color: rgba(40, 44, 52, 0.9);
+
+}
+
 
 .nav-style{
     display: flex;
@@ -6,8 +19,7 @@
     padding-top: 0px;
     padding-left: 10%;
     padding-right: 10%;
-    background-color: #282c34;
-        
+      
     }
 
 .nombre{
@@ -17,15 +29,9 @@
     margin: 15px;
 }
 .apellido{
-    color:#ea1538;
+    color:var(--secondary-color);
 }
 
-
-/*font-family: 'Montserrat', sans-serif;
-    color:white;
-    font-weight: bold;
-
-*/
 
 .menu-horizontal{
 	list-style: none;
@@ -42,10 +48,10 @@
 	text-decoration: none;
 }
 .menu-horizontal > li:hover{
-	background-color:#ea1538;
+	background-color:var(--secondary-color);
 }
 .menu-vertical{
-	position: absolute;
+	position: fixed;
 	display: none;
 	list-style: none;
 	width: 200px;
