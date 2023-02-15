@@ -1,7 +1,7 @@
 
 
-import First from "../../img-database/pastelero/paste1.jpg";
 import Second from "../../img-database/pastelero/paste2.jpg";
+import First from "../../img-database/pastelero/paste1.jpeg";
 
 
 const pastelero=[

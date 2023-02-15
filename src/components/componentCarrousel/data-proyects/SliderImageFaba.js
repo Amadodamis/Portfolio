@@ -2,7 +2,7 @@
 import First from "../../img-database/fabastore/fabastore1.jpg";
 import Second from "../../img-database/fabastore/fabastore2.jpg";
 import Third from "../../img-database/fabastore/fabastore3.jpg";
-import Fourth from "../../img-database/fabastoreo/fabastore4.jpg";
+import Fourth from "../../img-database/fabastore/fabastore4.jpg";
 import Fifth from "../../img-database/fabastore/fabastore5.jpg";
 
 const faba = [

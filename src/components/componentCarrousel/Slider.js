@@ -4,20 +4,20 @@ import Dots from "./Dots";
 import Arrows from "./Arrows";
 
 import "./slider.css";
-import sliderCocinero from "./data-proyects/SliderImageCocinero"
 
-const len = sliderCocinero.length - 1;
 
 function Slider(props) {
-
- 
+  const {sliderActual}=props
   
+  const len = sliderActual.length - 1;
+
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex(activeIndex === len ? 0 : activeIndex + 1);
     }, 5000);
+    
     return () => clearInterval(interval);
   }, [activeIndex]);
 
@@ -25,7 +25,7 @@ function Slider(props) {
   return (
     <div className="slider-container">
 
-<SliderContent activeIndex={activeIndex} sliderImage={sliderCocinero} />
+      <SliderContent activeIndex={activeIndex} sliderImage={sliderActual} />
 
       <Arrows
         prevSlide={() =>
@@ -37,7 +37,7 @@ function Slider(props) {
       />
       <Dots
         activeIndex={activeIndex}
-        sliderImage={sliderCocinero}
+        sliderImage={sliderActual}
         onclick={(activeIndex) => setActiveIndex(activeIndex)}
       />
     </div>
@@ -45,8 +45,3 @@ function Slider(props) {
 }
 
 export default Slider;
-
-/*
-<SliderContent activeIndex={activeIndex} sliderImage={sliderCocinero} />
-
-*/

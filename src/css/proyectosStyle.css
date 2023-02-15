@@ -1,41 +1,41 @@
-.proyectos-style{
+.proyectos-style {
     margin-top: 30px;
     margin-left: 10px;
     margin-right: 10px;
-    border-radius: 11%;
-    
+
 }
 
 
-.container-preview{
+.container-preview {
     width: 860px;
     height: 550px;
-    }
+}
 
-.preview{
+.preview {
     width: 100%;
     height: 100%;
 }
 
-  
 
-   /*    ********               TITLE     **********          */
 
-   .titulo{
+/*    ********               TITLE     **********          */
+
+.titulo {
     font-family: 'Roboto', sans-serif;
-       color: white;
-       font-size: 40px;  
-   }
-   
-   .span-title-proyects{
-       color: var(--secondary-color);
-   }
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.span-title-proyects {
+    color: var(--secondary-color);
+}
 
 
 
 /* nav PROYECTS*/
 
-.nav-proyects{
+.nav-proyects {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,39 +44,48 @@
     text-decoration: none;
 }
 
-.li-proyects{
+.li-proyects {
     list-style-type: none;
     display: inline-block;
     padding: 10px 20px;
-
 }
 
-.a-proyects{
+.a-proyects {
     font-family: 'Montserrat', sans-serif;
-    color:white;
+    color: white;
     font-weight: bold;
-text-decoration: none;
-font-weight: bold;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.a-proyects:hover{
-color: var(--secondary-color);
-transition: 0.3s;
+.a-proyects:hover {
+    color: var(--secondary-color);
+    transition: 0.3s;
 }
+
 /*  ******************************************** */
 
-.texto-proyect{
-        margin-bottom: 20px;
-        margin-left: 45px;
-        margin-right: 45px;
-        font-size: 15px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
-        color: var(--primary-color);
-        text-align: left;
+.texto-proyect {
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--primary-color);
+    
 }
 
-.primeraLetra{
+.primeraLetra {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    margin-left: 15px;
     font-size: 25px;
     color: var(--secondary-color);
+}
+
+.container-descripcion {
+    border-radius: 15px;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.3);
 }
