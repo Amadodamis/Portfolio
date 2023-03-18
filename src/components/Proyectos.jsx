@@ -12,7 +12,7 @@ import sliderPastelero from "./componentCarrousel/data-proyects/SliderImagePaste
 
 //sliders developer
 import sliderFaba from "./componentCarrousel/data-proyects/SliderImageFaba"
-import sliderIg from "./componentCarrousel/data-proyects/SliderImageIg"
+
 
 
 function Proyectos({ profesion, identificator, texto, mayus, proyectsName }) {
