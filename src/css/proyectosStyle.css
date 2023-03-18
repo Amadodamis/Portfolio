@@ -21,7 +21,7 @@
 /*    ********               TITLE     **********          */
 
 .titulo {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--fontTitle);
     color: white;
     font-size: 40px;
     text-align: center;
@@ -51,7 +51,7 @@
 }
 
 .a-proyects {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fontText);
     color: white;
     font-weight: bold;
     text-decoration: none;
@@ -70,10 +70,10 @@
     margin-top: 15px;
     margin-left: 15px;
     font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fontText);
     font-weight: 700;
     color: var(--primary-color);
-    
+
 }
 
 .primeraLetra {

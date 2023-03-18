@@ -13,7 +13,6 @@ function App() {
 
   return (
     <div className="App-main">
-
       <Header />
       <Banner />
       <Proyectos profesion={"DESARROLLADOR"} identificator={"developer"}
@@ -26,10 +25,29 @@ function App() {
         texto={textoGastronomia} mayus={mayusGastro}
         proyectsName={proyectosCheff}
       />
-
       <Footer />
     </div>
   );
 }
 
 export default App;
+
+
+/*
+<Header />
+      <Banner />
+      <Proyectos profesion={"DESARROLLADOR"} identificator={"developer"}
+        texto={textoDesarrollador} mayus={mayusDes}
+        proyectsName={proyectosDesarrolador}
+      />
+
+      <Proyectos
+        profesion={"CHEFF"} identificator={"cheff"}
+        texto={textoGastronomia} mayus={mayusGastro}
+        proyectsName={proyectosCheff}
+      />
+
+
+
+
+*/

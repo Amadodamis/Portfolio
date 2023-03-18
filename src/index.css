@@ -1,6 +1,10 @@
-:root{
-  --primary-color:#282c34;
-  --secondary-color:#ea1538;
+:root {
+  --primary-color: #282c34;
+  --secondary-color: #ea1538;
+  --fondo: rgba(40, 44, 52, 0.9);
+  --fontTitle: 'Roboto', sans-serif;
+  --fontText: 'Montserrat', sans-serif;
+
 }
 
 body {

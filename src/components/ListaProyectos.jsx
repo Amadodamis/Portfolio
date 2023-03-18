@@ -2,9 +2,9 @@ import "../css/proyectosStyle.css"
 
 
 
-function ListaProyectos(props) {
-    const { p,cambiarProyectoActual } = props;
-   
+export default function ListaProyectos(props) {
+    const { p, cambiarProyectoActual } = props;
+
 
     const mostrarProyects = p.map((proyect, i) => {
         return (
@@ -19,7 +19,7 @@ function ListaProyectos(props) {
         <nav className="nav-proyects">
 
             <ul >
-               {mostrarProyects}
+                {mostrarProyects}
             </ul>
 
         </nav>
@@ -27,5 +27,5 @@ function ListaProyectos(props) {
     );
 }
 
-export default ListaProyectos;
+
 

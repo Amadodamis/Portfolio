@@ -10,31 +10,3 @@
   min-height: 100vh;
   margin-top: 0px;
 }
-
-
-.footer-style{
-  height: 20px;
-  background-color: var(--primary-color);
-}
-
-.footer-style p{
-  color:white;
-  font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
-    text-align: end;
-    bottom: 10%;
-}
-
-.second-pi{
-  font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
-    font-size: 7px;
-}
-
-/*
-
-background-image: url(../img/background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-
-*/
