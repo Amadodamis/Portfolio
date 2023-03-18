@@ -15,9 +15,8 @@ import sliderFaba from "./componentCarrousel/data-proyects/SliderImageFaba"
 import sliderIg from "./componentCarrousel/data-proyects/SliderImageIg"
 
 
-function Proyectos(props) {
+function Proyectos({ profesion, identificator, texto, mayus, proyectsName }) {
 
-    const { profesion, identificator, texto, mayus, proyectsName } = props;
 
     //Inicializacion del primer Slider
     let sliderInicial
@@ -29,11 +28,6 @@ function Proyectos(props) {
 
     //html 
     let titulo = <h2 className="titulo">PROYECTOS COMO <span className="span-title-proyects">{profesion}</span> </h2>
-
-
-
-
-
     let descripcion = <p className="texto-proyect"><span className="primeraLetra">{mayus}</span> {texto} </p>
 
     const cambiarProyectoActual = e => {
@@ -50,7 +44,8 @@ function Proyectos(props) {
             if (nuevoProyecto === "Cocinero") {
                 setSliderActual(sliderCocinero)
             }
-        } else {
+        }
+         else {
             if (nuevoProyecto === "Instagram Dashboard") {
                 setSliderActual(sliderIg)
             }
