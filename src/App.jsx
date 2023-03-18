@@ -39,16 +39,3 @@ function App() {
 }
 
 export default App;
-
-
-/**
- 
-<Proyectos profesion={"DESARROLLADOR"} identificator={"developer"}
-        proyectsName={proyectosDesarrolador}
-        faba={faba}
-        ig={ig}
-        arrayProyects={arrayProyectosDev}
-      />
-
-
- */
