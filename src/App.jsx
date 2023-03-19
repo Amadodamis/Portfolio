@@ -31,23 +31,3 @@ function App() {
 }
 
 export default App;
-
-
-/*
-<Header />
-      <Banner />
-      <Proyectos profesion={"DESARROLLADOR"} identificator={"developer"}
-        texto={textoDesarrollador} mayus={mayusDes}
-        proyectsName={proyectosDesarrolador}
-      />
-
-      <Proyectos
-        profesion={"CHEFF"} identificator={"cheff"}
-        texto={textoGastronomia} mayus={mayusGastro}
-        proyectsName={proyectosCheff}
-      />
-
-
-
-
-*/
