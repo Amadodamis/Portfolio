@@ -1,15 +1,15 @@
 import "../css/BannerStyle.css"
 
 import foto from "../img/fotocv.jpg"
-import { tituloDev, textoDev, tituloG, textoG } from "../JS/dataBanner"
+import { tituloDev, textoDev } from "../JS/dataBanner"
 
 
-export default function Banner() {
+export default function aboutMe() {
 
     let fotoUser = <img src={foto} alt="fotoCv" className="foto" />
 
     return (
-        <div className="Banner" id={"aboutMe"}>
+        <div className="Banner" >
 
             <div className='container-foto-cv'>{fotoUser}</div>
 

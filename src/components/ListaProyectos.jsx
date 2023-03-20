@@ -2,7 +2,7 @@ import "../css/proyectosStyle.css"
 
 
 
-export default function ListaProyectos({ p }) {
+export default function ListaProyectos({ proyectos }) {
 
 
     return (
@@ -10,7 +10,7 @@ export default function ListaProyectos({ p }) {
 
             <ul >
                 {
-                    p.map((proyect, i) =>
+                    proyectos.map((proyect, i) =>
                         <li key={i} className="li-proyects">
                             <a href="/" className="a-proyects" id={proyect} >{proyect}</a>
                         </li>
