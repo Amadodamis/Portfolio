@@ -6,7 +6,7 @@ import Banner from './components/Banner';
 import Proyectos from './components/Proyectos';
 import Footer from './components/Footer';
 
-import { proyectosCheff, proyectosDesarrolador, textoDesarrollador, mayusDes, textoGastronomia, mayusGastro } from './JS/data';
+import { proyectosCheff, proyectosDesarrolador, textoDesarrollador, textoGastronomia} from './JS/data';
 
 function App() {
 
@@ -16,13 +16,13 @@ function App() {
       <Header />
       <Banner />
       <Proyectos profesion={"DESARROLLADOR"} identificator={"developer"}
-        texto={textoDesarrollador} mayus={mayusDes}
+        texto={textoDesarrollador} 
         proyectsName={proyectosDesarrolador}
       />
 
       <Proyectos
         profesion={"CHEFF"} identificator={"cheff"}
-        texto={textoGastronomia} mayus={mayusGastro}
+        texto={textoGastronomia} 
         proyectsName={proyectosCheff}
       />
       <Footer />
