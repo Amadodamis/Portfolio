@@ -1,24 +1,11 @@
 .proyectos-style {
-    margin-top: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
     height: 100vh;
+    align-items: center;
+    width: 80%;
+    justify-content: flex-start;
 }
-
-
-.container-preview {
-    width: 860px;
-    height: 550px;
-}
-
-.preview {
-    width: 100%;
-    height: 100%;
-}
-
-
-
-/*    ********               TITLE     **********          */
 
 .titulo {
     font-family: var(--fontTitle);
@@ -27,22 +14,20 @@
     text-align: center;
 }
 
-.span-title-proyects {
-    color: var(--secondary-color);
+.container-descripcion {
+    border-radius: 15px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
+.texto-proyect {
+    font-size: 15px;
+    font-family: var(--fontText);
+    font-weight: 700;
+    color: var(--primary-color);
 
-
-/* nav PROYECTS*/
-
-.nav-proyects {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 10%;
-    padding-right: 10%;
-    text-decoration: none;
 }
+
 
 .li-proyects {
     list-style-type: none;
@@ -61,31 +46,4 @@
 .a-proyects:hover {
     color: var(--secondary-color);
     transition: 0.3s;
-}
-
-/*  ******************************************** */
-
-.texto-proyect {
-    text-align: left;
-    margin-top: 15px;
-    margin-left: 15px;
-    font-size: 15px;
-    font-family: var(--fontText);
-    font-weight: 700;
-    color: var(--primary-color);
-
-}
-
-.primeraLetra {
-    margin-top: 15px;
-    margin-bottom: 25px;
-    margin-left: 15px;
-    font-size: 25px;
-    color: var(--secondary-color);
-}
-
-.container-descripcion {
-    border-radius: 15px;
-    margin-bottom: 15px;
-    background-color: rgba(255, 255, 255, 0.3);
 }

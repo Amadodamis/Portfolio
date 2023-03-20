@@ -17,14 +17,12 @@ function Proyectos({ profesion, identificator, texto, proyectsName }) {
             <ListaProyectos
                 p={proyectsName}
               
-               
             />
 
             <div className="container-descripcion">
                 <p className="texto-proyect">{texto} </p>
             </div>
-
-           
+  
         </article>
 
     );

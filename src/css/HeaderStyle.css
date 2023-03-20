@@ -1,10 +1,10 @@
-.header{	
-	position: fixed;
+.header {
+    position: fixed;
     height: 90px;
     width: 100%;
     top: 0;
     left: 0;
-	z-index: 1;
+    z-index: 1;
     transition: .3s ease-in;
     overflow: hidden;
     background-color: var(--fondo);
@@ -12,63 +12,67 @@
 }
 
 
-.nav-style{
+.nav-style {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 0px;
     padding-left: 10%;
     padding-right: 10%;
-      
-    }
 
-.nombre{
+}
+
+.nombre {
     color: white;
     font-size: 50px;
     font-family: var(fontTitle);
     margin: 15px;
 }
-.apellido{
-    color:var(--secondary-color);
+
+.apellido {
+    color: var(--secondary-color);
 }
 
 
-.menu-horizontal{
-	list-style: none;
-	display: flex;
-	justify-content: space-around;
+.menu-horizontal {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
     font-family: 'Montserrat', sans-serif;
-    color:white;
+    color: white;
     font-weight: bold;
 }
-.menu-horizontal > li > a{
-	display: block;
-	padding: 15px 20px;
-	color: white;
-	text-decoration: none;
-}
-.menu-horizontal > li:hover{
-	background-color:var(--secondary-color);
-}
-.menu-vertical{
-	position: fixed;
-	display: none;
-	list-style: none;
-	width: 200px;
-	background-color: rgba(0, 0, 0, .5);
-}
-.menu-horizontal li:hover .menu-vertical{
-	display: block;
-}
-.menu-vertical li:hover{
-	background-color: black;
+
+.menu-horizontal>li>a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
 }
 
-.menu-vertical li a{
-	display: block;
-	color: white;
-	text-decoration: none;
-	padding: 15px 15px 15px 20px;
+.menu-horizontal>li:hover {
+    background-color: var(--secondary-color);
 }
 
+.menu-vertical {
+    position: fixed;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, .5);
+}
 
+.menu-horizontal li:hover .menu-vertical {
+    display: block;
+}
+
+.menu-vertical li:hover {
+    background-color: black;
+}
+
+.menu-vertical li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 15px 15px 20px;
+}
