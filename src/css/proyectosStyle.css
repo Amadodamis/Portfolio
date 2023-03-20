@@ -9,7 +9,7 @@
 
 .titulo {
     font-family: var(--fontTitle);
-    color: white;
+    color: var(--primary-color);
     font-size: 40px;
     text-align: center;
 }
@@ -37,7 +37,7 @@
 
 .a-proyects {
     font-family: var(--fontText);
-    color: white;
+    color: var(--primary-color);
     font-weight: bold;
     text-decoration: none;
     font-weight: bold;

@@ -21,10 +21,7 @@ export default function Banner() {
                 <div className="container-about">
                     <p className="texto">{tituloDev} </p>
                     <p className="texto">{textoDev} </p>
-                    <p className="texto">{tituloG} </p>
-                    <p className="texto">{textoG} </p>
                 </div>
-
             </div>
 
         </div>
