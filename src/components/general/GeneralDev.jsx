@@ -1,12 +1,18 @@
-import { Link } from "react-router-dom"
 import fotoDeveloper from "../../img/fotocv.jpg"
-
+import { tituloDev, textoDev } from "../../JS/dataBanner"
 export default function GeneralDev({ left, addLeft, removeLeft }) {
     return (
         <div className="split left" ref={left} onMouseEnter={addLeft} onMouseLeave={removeLeft} >
-            <img src={fotoDeveloper} alt={"foto-developers"} className="foto-general" />
             <h1 className="title-rol">DEVELOPER</h1>
-            <Link to={`developer`}><div className="btn">Proyectos</div></Link>
+
+            <img src={fotoDeveloper} alt={"foto-developers"} className="foto-general" />
+
+            <div className='description'>
+                <h2>{tituloDev}</h2>
+                <p>{textoDev}</p>
+            </div>
+
+            <div className="btn">Proyectos</div>
 
         </div>
     )
