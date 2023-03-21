@@ -7,7 +7,6 @@ import { proyectosDesarrolador, textoDesarrollador } from "../JS/data";
 
 function Proyectos() {
 
-
     return (
 
         <article className="proyectos-style" >

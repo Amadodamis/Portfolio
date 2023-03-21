@@ -1,9 +1,12 @@
 import "../css/HeaderStyle.css"
-import { Link } from "react-router-dom";
-import { cvCheff, cvCheffEng, cvDesarrollador, cvDesarrolladorEng } from "../JS/dataCvs";
+import { Link, useParams } from "react-router-dom";
+
+import { titleRuta, ruta } from "../JS/ruta";
+import MenuVertical from "./headerMenuVertical";
 
 function Header() {
 
+  let paramProfesion = useParams()
   return (
     <div className='header'>
       <nav className="nav-style">
@@ -15,25 +18,9 @@ function Header() {
 
         <ul className="menu-horizontal" >
 
-          <li > <Link to={`/developer`} className="link">Desarrolador</Link> </li>
+          <li > <Link to={ruta(paramProfesion.profesion)} className="link"> {titleRuta(paramProfesion.profesion)} </Link> </li>
 
-          <li > <Link to={`/cheff`} className="link">Cheff</Link> </li>
-
-          <li className="vertical"> Cv
-
-            <ul className="menu-vertical">
-
-              <li ><Link to={cvDesarrollador} className="link">Desarrolador</Link></li>
-
-              <li ><Link to={cvDesarrolladorEng} className="link">Developer </Link></li>
-
-              <li ><Link to={cvCheff} className="link">Profesional gastronomico</Link></li>
-
-              <li ><Link to={cvCheffEng} className="link">Gastronomic professional</Link></li>
-
-            </ul>
-
-          </li>
+          <MenuVertical />
 
           <li ><Link to={`https://www.linkedin.com/in/amadodamis/`} className="link">Linkedin</Link></li>
 
