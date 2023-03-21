@@ -5,7 +5,6 @@ export default function aboutMe({ profesion }) {
 
     return (
         <div className="Banner" >
-
             <div className='container-foto-cv'>
                 <img src={getFoto(profesion)} alt="fotoCv" className="foto" />
             </div>

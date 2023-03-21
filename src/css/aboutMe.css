@@ -4,6 +4,7 @@
     align-items: center;
     width: 80%;
     justify-content: space-around;
+    border: 1px red solid;
 }
 
 .container-foto-cv {

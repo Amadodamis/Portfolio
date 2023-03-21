@@ -7,28 +7,20 @@ import MenuVertical from "./headerMenuVertical";
 function Header() {
 
   let paramProfesion = useParams()
-  
+  let profesion = paramProfesion.profesion;
   return (
     <div className='header'>
-      <nav className="nav-style">
+      <ul className="menu-horizontal" >
 
-        <Link to={`/`} className="link">
-          <h2 className="nombre">AMADO DAMIS</h2>
-        </Link>
+        <li > <Link to={ruta(profesion)} className="link"> {titleRuta(profesion)} </Link> </li>
 
+        <MenuVertical
+          profesion={profesion}
+        />
 
-        <ul className="menu-horizontal" >
+        <li >Eng</li>
+      </ul>
 
-          <li > <Link to={ruta(paramProfesion.profesion)} className="link"> {titleRuta(paramProfesion.profesion)} </Link> </li>
-
-          <MenuVertical />
-
-          <li ><Link to={`https://www.linkedin.com/in/amadodamis/`} className="link">Linkedin</Link></li>
-
-          <li ><Link to={`https://github.com/Amadodamis`} className="link">Github</Link></li>
-        </ul>
-
-      </nav>
 
     </div>
   );

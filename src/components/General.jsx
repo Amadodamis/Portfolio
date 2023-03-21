@@ -44,7 +44,7 @@ export default function General() {
 
                     <img src={fotoCheff} alt={"fotodevelopers"} className="foto-general" />
                     <h1>CHEFF</h1>
-                    <Link to={`Cheff`}><div className="btn">Portfolio</div></Link>
+                    <Link to={`cheff`}><div className="btn">Portfolio</div></Link>
                 </div>
             </div>
         </div>

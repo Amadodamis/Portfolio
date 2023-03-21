@@ -1,20 +1,19 @@
 import { Link } from "react-router-dom";
-import { cvCheff, cvCheffEng, cvDesarrollador, cvDesarrolladorEng } from "../JS/dataCvs";
+import getCvs from "../JS/getCvs";
 
-export default function MenuVertical() {
+export default function MenuVertical({ profesion }) {
+
+    let cvs = [...getCvs(profesion)]
+
     return (
         <li className="vertical">
-            Cv
+            CV
             <ul className="menu-vertical">
-
-                <li ><Link to={cvDesarrollador} className="link">Desarrolador</Link></li>
-
-                <li ><Link to={cvDesarrolladorEng} className="link">Developer </Link></li>
-
-                <li ><Link to={cvCheff} className="link">Profesional gastronomico</Link></li>
-
-                <li ><Link to={cvCheffEng} className="link">Gastronomic professional</Link></li>
-
+                {
+                    cvs.map((cv, i) =>
+                        <li ><Link to={cv.link} className="link">{cv.title} {cv.leng}</Link></li>
+                    )
+                }
             </ul>
 
         </li>
