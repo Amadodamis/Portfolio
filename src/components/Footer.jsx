@@ -1,4 +1,4 @@
-import "../css/footer.css"
+import "./footer.css"
 
 import gitHubIcon from "../img/icons-footer/github.png"
 import linkedinIcon from "../img/icons-footer/linkedin.png"

@@ -5,7 +5,7 @@
     margin: 0;
 }
 
-.container h1 {
+.title-rol {
     font-size: 4rem;
     color: #fff;
     position: absolute;
@@ -71,7 +71,7 @@
 
 .split.left {
     left: 0;
-    background: url('../img/background/coding.jpg');
+    background: url('../../img/background/coding.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -86,7 +86,7 @@
 
 .split.right {
     right: 0;
-    background: url("../img/background/cook2.jpg");
+    background: url("../../img/background/cook2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -122,14 +122,6 @@
     width: var(--other-width);
 }
 
-.container-foto {
-    width: 400px;
-    height: 400px;
-    background-color: white;
-}
-
-
-
 
 @media (max-width: 800px) {
     h1 {
@@ -140,5 +132,10 @@
     .btn {
         padding: 1.2rem;
         width: 12rem;
+    }
+
+    .foto-general {
+        width: 250px;
+        height: 250px;
     }
 }

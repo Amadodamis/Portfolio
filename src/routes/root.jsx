@@ -1,15 +1,11 @@
-import "../css/App.css"
-import { Outlet } from "react-router-dom"
-import Header from '../components/Header';
 import Footer from '../components/Footer';
-
+import General from "../components/general/General";
 
 export default function Root() {
 
     return (
-        <div className="App-main">
-            <Header />
-            <Outlet />
+        <div>
+            <General />
             <Footer />
         </div>
     );
