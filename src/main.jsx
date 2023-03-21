@@ -11,7 +11,8 @@ import {
 import Root from './routes/root'
 import ErrorPage from './components/error-page'
 import General from './components/General'
-import Rol from './components/Rol'
+import Developer from './components/Developer'
+import Cheff from './components/Cheff'
 
 const router = createBrowserRouter([
   {
@@ -25,12 +26,12 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: ":profesion",
-        element: <Rol />,
+        path: "/developer",
+        element: <Developer />,
       },
       {
-        path: ":profesion",
-        element: <Rol />,
+        path: "/cheff",
+        element: <Cheff />,
       },
     ],
   },

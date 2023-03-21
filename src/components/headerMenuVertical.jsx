@@ -11,7 +11,7 @@ export default function MenuVertical({ profesion }) {
             <ul className="menu-vertical">
                 {
                     cvs.map((cv, i) =>
-                        <li ><Link to={cv.link} className="link">{cv.title} {cv.leng}</Link></li>
+                        <li key={i} ><Link to={cv.link} className="link">{cv.title} {cv.leng}</Link></li>
                     )
                 }
             </ul>

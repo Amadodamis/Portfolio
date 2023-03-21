@@ -1,7 +1,7 @@
 import "../css/aboutMe.css"
 import { getFoto, getTexto, getTitulo } from "../JS/dataAbout";
 
-export default function aboutMe({ profesion }) {
+export default function aboutCheff({ profesion }) {
 
     return (
         <div className="Banner" >
@@ -11,8 +11,8 @@ export default function aboutMe({ profesion }) {
 
             <div className="container-col2">
 
-                <h2 className="titulo-banner">About</h2>
-                <span className="underline"></span>
+                <h2 className="titulo-banner">AMADO DAMIS</h2>
+              
 
                 <div className="container-about">
                     <p className="texto">{getTitulo(profesion)} </p>

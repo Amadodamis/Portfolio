@@ -1,3 +1,12 @@
+function parseLocation(location) {
+
+    let cadena = location.split("/")
+    let profesion = cadena[1];
+
+    return profesion
+}
+
+
 function titleRuta(profesion) {
     let title = ""
     if (profesion === "cheff") {
@@ -19,4 +28,4 @@ function ruta(profesion) {
     return ruta
 }
 
-export { titleRuta, ruta }
+export { titleRuta, ruta, parseLocation }

@@ -1,10 +1,10 @@
 .Banner {
     display: flex;
-    height: 90vh;
+    height: 100vh;
     align-items: center;
     width: 80%;
     justify-content: space-around;
-    border: 1px red solid;
+    
 }
 
 .container-foto-cv {
@@ -35,13 +35,7 @@
 }
 
 
-.underline {
-    background-color: var(--primary-color);
-    display: block;
-    width: 160px;
-    height: 3px;
-    margin: 5px auto;
-}
+
 
 
 .container-about {
