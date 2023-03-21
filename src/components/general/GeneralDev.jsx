@@ -1,5 +1,7 @@
 import fotoDeveloper from "../../img/fotocv.jpg"
 import { tituloDev, textoDev } from "../../JS/dataBanner"
+import Icons from "./Icons"
+
 export default function GeneralDev({ left, addLeft, removeLeft }) {
     return (
         <div className="split left" ref={left} onMouseEnter={addLeft} onMouseLeave={removeLeft} >
@@ -9,7 +11,8 @@ export default function GeneralDev({ left, addLeft, removeLeft }) {
 
             <div className='description'>
                 <h2>{tituloDev}</h2>
-                <p>{textoDev}</p>
+                <p className="texto-descripcion">{textoDev}</p>
+                <Icons/>
             </div>
 
             <div className="btn">Proyectos</div>

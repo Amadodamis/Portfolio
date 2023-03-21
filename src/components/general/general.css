@@ -36,6 +36,7 @@
     position: absolute;
     left: 10%;
     top: 60%;
+   
 }
 
 .description h2 {
@@ -44,6 +45,7 @@
     font-family: var(--fontTitle);
     text-transform: uppercase;
     font-size: 2rem;
+    text-align: center;
 }
 
 .description p {
@@ -51,7 +53,7 @@
     font-weight: 100;
     font-family: var(--fontText);
     font-size: 1rem;
-
+    
 }
 
 
@@ -63,7 +65,7 @@
     align-items: center;
     justify-content: center;
     left: 50%;
-    bottom: 0%;
+    bottom: 1%;
     transform: translateX(-50%);
     text-decoration: none;
     color: #fff;
@@ -141,8 +143,17 @@
     width: var(--hover-width);
 }
 
+
 .hover-left .right {
     width: var(--other-width);
+}
+
+.hover-left .right p {
+    display: none;
+}
+
+.hover-left .right h2 {
+    font-size: 1.5rem;
 }
 
 .hover-right .right {
@@ -152,6 +163,28 @@
 .hover-right .left {
     width: var(--other-width);
 }
+
+.hover-right .left p {
+    display: none;
+}
+
+.hover-right .left h2 {
+    font-size: 1.5rem;
+}
+
+.container-icons-general {
+    text-align: center;
+}
+
+.icon-general {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+
+
+
+
 
 
 @media (max-width: 800px) {
