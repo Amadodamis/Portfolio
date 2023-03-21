@@ -1,29 +1,24 @@
 import "../css/proyectosStyle.css"
+import getProyecto from "../JS/getProyecto"
 
 
+export default function ListaProyectos({ proyectos, proyectoActual, setProyectoActual }) {
 
-export default function ListaProyectos({ proyectos }) {
+
+    const setProyect = (e) => {
+        let name = e.target.getAttribute('name')
+        let nuevoProyecto = getProyecto(name, proyectos)
+        setProyectoActual(nuevoProyecto)
+    }
 
 
     return (
-        <nav className="nav-proyects">
-
-            <ul >
-                {
-                    proyectos.map((proyect, i) =>
-                        <li key={i} className="li-proyects">
-                            <a href="/" className="a-proyects" id={proyect} >{proyect}</a>
-                        </li>
-
-                    )
-                }
-
-            </ul>
-
-        </nav>
-
+        <ul >
+            {
+                proyectos.map((proyect, i) =>
+                    <li key={i} className="li-proyects" name={proyect.title} onClick={setProyect} > {proyect.title} </li>
+                )
+            }
+        </ul>
     );
 }
-
-
-

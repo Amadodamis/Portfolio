@@ -1,13 +1,36 @@
-let proyectosDesarrolador = ["Fabastore", "How-Much", "Cookbook"]
-let textoDesarrollador = "FabaStore fue mi primero proyecto, en conjunto con 2 compañeros mientras terminabamos el curso de Desarrollo Full Stack en Digital House. Aunque tiene muchos errores, y no es muy estetico, logramos trabajar en equipo con metodologia Scrum. Utilizamos Express, cookies, session, Nodejs, SQL con Deaver y Xampp."
+let fabaStore = "Fabastore fue mi proyecto final en el curso full-stack de Digital house. Con dos compañeros, logramos crear un e-commerce de articulos de computacion. Aunque no es muy estetico, y tiene muchos errores, lograrmos superar las pruebas y resolver todos los errores que nos iban surgiendo. Utilizamos Node.js con Express para el back-end, cookies, session, SQL con DBeaver y Xampp, y EJS como template para el front-end."
+let howMuch = "How-Much App, es mi primer proyecto front-end. La aplicacion resuelve una situacion que suele pasar seguido en una juntada entre amigos y/o familia. Resulta que cuando todos queremos gastar el mismo dinero en la cena,fiesta o reunion, nos encontramos que una persona trajo algo para tomar, otro compro la cena, otros compraron cosas puntuales y otros solo quieren dar el dinero. Todo resulta en que nadie sabe a quien le tiene que dar dinero y en el peor de los casos se hace mal la cuenta y una persona termina gastando mas que otras."
+let cookbook = "Cookbook-App es mi proyecto personal favorito, desde que soy cocinero hace años que siempre busqueda una aplicacion de almacene recetas y sea comoda para el uso diario y nunca la encontre. Con este proyecto me encontre con un sentimiento muy interesante, ya que no solo estoy programando una aplicacion, si no que tambien soy usuario de mi aplicacion, lo que me llevo a ser un proyecto muy exigente para conmigo."
+
+let proyectosDev = [
+    {
+        title: "Fabastore",
+        texto: fabaStore,
+    },
+    {
+        title: "How-much",
+        texto: howMuch,
+    },
+    {
+        title: "Cookbook-App",
+        texto: cookbook,
+    }
+]
+
+
+let proyectosCheff = [{
+    title: "Cocinero",
+    texto: "",
+},
+{
+    title: "Panadero",
+    texto: "",
+},
+{
+    title: "Pastelero",
+    texto: "",
+}]
 
 
 
-
-let proyectosCheff = ["Cocinero", "Panadero", "Pastelero"]
-
-let textoGastronomia = "Siempre me gustó cocinar, es algo que está en mí desde muy chico. Lo que más me gustó siempre fue recrear platos típicos de la gastronomía Argentina y llevarlos a la vanguardia.Mi experiencia como Panadero fue una de las más positivas de mi vida, ya que fue mi primer negocio, en el cual me encargue de la elaboración de panes, distribuirlos, hacer su publicidad y costos. Mi carrera como pastelero es corta; pero siempre en las mejores maneras de sorprender. Mis postres no son típicos, siempre jugando con gustos salados, como puede ser chocolate con oliva, o granitas de cilantro. La pastelería está evolucionando y sin lugar a dudas estoy en ese lugar."
-
-
-
-export { proyectosDesarrolador, proyectosCheff,textoDesarrollador,textoGastronomia }
+export { proyectosCheff, proyectosDev }

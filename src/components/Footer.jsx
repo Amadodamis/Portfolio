@@ -7,7 +7,6 @@ import topIcon from "../img/icons-footer/top.png"
 
 export default function Footer() {
 
-    console.log("renderize")
     return (
         <footer>
             <div className='footer-content'>

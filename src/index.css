@@ -1,8 +1,7 @@
 :root {
   --primary-color: #282c34;
   --secondary-color: #b94429;
-  --overlay:#2b2b2bcc;
-
+  --overlay:rgba(40, 44, 52, 0.7);
   --fondo: rgba(40, 44, 52, 0.9);
   --fontTitle: 'Roboto', sans-serif;
   --fontText: 'Montserrat', sans-serif;

@@ -7,6 +7,7 @@ import MenuVertical from "./headerMenuVertical";
 function Header() {
 
   let paramProfesion = useParams()
+  
   return (
     <div className='header'>
       <nav className="nav-style">
