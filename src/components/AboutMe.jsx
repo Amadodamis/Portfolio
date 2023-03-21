@@ -1,17 +1,14 @@
-import "../css/BannerStyle.css"
+import "../css/aboutMe.css"
+import { getFoto, getTexto, getTitulo } from "../JS/dataAbout";
 
-import foto from "../img/fotocv.jpg"
-import { tituloDev, textoDev } from "../JS/dataBanner"
-
-
-export default function aboutMe() {
-
-    let fotoUser = <img src={foto} alt="fotoCv" className="foto" />
+export default function aboutMe({ profesion }) {
 
     return (
         <div className="Banner" >
 
-            <div className='container-foto-cv'>{fotoUser}</div>
+            <div className='container-foto-cv'>
+                <img src={getFoto(profesion)} alt="fotoCv" className="foto" />
+            </div>
 
             <div className="container-col2">
 
@@ -19,8 +16,8 @@ export default function aboutMe() {
                 <span className="underline"></span>
 
                 <div className="container-about">
-                    <p className="texto">{tituloDev} </p>
-                    <p className="texto">{textoDev} </p>
+                    <p className="texto">{getTitulo(profesion)} </p>
+                    <p className="texto">{getTexto(profesion)} </p>
                 </div>
             </div>
 

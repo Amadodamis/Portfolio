@@ -25,7 +25,7 @@ function Header() {
 
           <li ><Link to={`https://www.linkedin.com/in/amadodamis/`} className="link">Linkedin</Link></li>
 
-          <li ><Link to={`https://github.com/Amadodamis`} className="link">Linkedin</Link></li>
+          <li ><Link to={`https://github.com/Amadodamis`} className="link">Github</Link></li>
         </ul>
 
       </nav>
