@@ -35,3 +35,8 @@ code {
   justify-content: center;
   width: 100%;
 }
+
+.rol{
+  max-width: 100%;
+  border: 1px red solid;
+}

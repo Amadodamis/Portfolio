@@ -1,52 +1,47 @@
-import React from "react";
 import "../css/HeaderStyle.css"
+import { Link } from "react-router-dom";
+import { cvCheff, cvCheffEng, cvDesarrollador, cvDesarrolladorEng } from "../JS/dataCvs";
 
 function Header() {
-
-  let h2 = <h2 className="nombre">AMADO <span className="apellido">DAMIS</span></h2>
-
-  let sobreMi = <a href="#aboutMe" >Sobre mi</a>;
-  let proyectos = <a href="#developer" >Desarrolador</a>;
-  let gastronomia = <a href="#cheff" >Cheff</a>
-  let curriculum = <a href="/" >Cv</a>
-  let linkedin = <a href="https://www.linkedin.com/in/amadodamis/" >Linkedin</a>
-  let github = <a href="https://github.com/Amadodamis" >Github</a>
-
 
   return (
     <div className='header'>
       <nav className="nav-style">
 
-        {h2}
+        <Link to={`/`} className="link">
+          <h2 className="nombre">AMADO DAMIS</h2>
+        </Link>
+
 
         <ul className="menu-horizontal" >
-          <li > {sobreMi} </li>
 
-          <li > {proyectos} </li>
+          <li > <Link to={`/developer`} className="link">Desarrolador</Link> </li>
 
-          <li > {gastronomia} </li>
+          <li > <Link to={`/cheff`} className="link">Cheff</Link> </li>
 
-          <li > {curriculum}
+          <li className="vertical"> Cv
 
             <ul className="menu-vertical">
 
-              <li ><a href="https://drive.google.com/file/d/14a5Duaq8BFCXHzjRf88C6tfEAyaGdIni/view?usp=sharing">Desarrollador</a></li>
+              <li ><Link to={cvDesarrollador} className="link">Desarrolador</Link></li>
 
-              <li ><a href="https://docs.google.com/document/d/1t1y5hQZPdFFbIUKGZY_lhobcZyhNfnzPUegwa1p4PC4/edit?usp=sharing" >Profesional gastronomico</a></li>
+              <li ><Link to={cvDesarrolladorEng} className="link">Developer </Link></li>
 
-              <li ><a href="https://drive.google.com/file/d/1XSxHOP81Fys0F373Svj722YCylvE1u_1/view?usp=sharing" >Developer</a></li>
+              <li ><Link to={cvCheff} className="link">Profesional gastronomico</Link></li>
 
-              <li ><a href="https://docs.google.com/document/d/1CfaCnM_4KZ-0vE4R7kBt7pLdLUPL-KXQc0zU0Oy-N6c/edit?usp=sharing">Gastronomic Professional</a></li>
+              <li ><Link to={cvCheffEng} className="link">Gastronomic professional</Link></li>
 
             </ul>
 
           </li>
 
-          <li >{linkedin} </li>
+          <li ><Link to={`https://www.linkedin.com/in/amadodamis/`} className="link">Linkedin</Link></li>
 
-          <li > {github} </li>
+          <li ><Link to={`https://github.com/Amadodamis`} className="link">Linkedin</Link></li>
         </ul>
+
       </nav>
+
     </div>
   );
 }

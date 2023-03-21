@@ -4,9 +4,9 @@ import Proyectos from './Proyectos'
 
 export default function Rol() {
     return (
-        <>
+        <section className='rol'>
             <AboutMe />
             <Proyectos />
-        </>
+        </section>
     )
 }

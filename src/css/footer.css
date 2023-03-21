@@ -1,7 +1,7 @@
 footer {
     background: var(--fondo);
     height: auto;
-    width: 100vw;
+    width: 100%;
     padding-top: 40px;
     color: #fff;
     font-family: var(--fontTitle);
@@ -31,7 +31,7 @@ footer {
 
 .footer-bottom {
 
-    width: 100vw;
+    width: 100%;
     padding: 20px 0;
     text-align: center;
 }

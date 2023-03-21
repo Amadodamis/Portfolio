@@ -8,46 +8,47 @@
     transition: .3s ease-in;
     overflow: hidden;
     background-color: var(--fondo);
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
 .nav-style {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-top: 0px;
-    padding-left: 10%;
-    padding-right: 10%;
+    justify-content: space-around;
+}
+
+.link {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: white;
 
 }
 
-.nombre {
+.header h2 {
     color: white;
     font-size: 50px;
-    font-family: var(fontTitle);
-    margin: 15px;
-}
-
-.apellido {
-    color: var(--secondary-color);
+    font-family: var(--fontTitle);
+    text-decoration: none;
 }
 
 
 .menu-horizontal {
-    list-style: none;
     display: flex;
     justify-content: space-around;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fontText);
     color: white;
     font-weight: bold;
 }
 
-.menu-horizontal>li>a {
-    display: block;
+
+.menu-horizontal>li {
     padding: 15px 20px;
-    color: white;
-    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
 }
 
 .menu-horizontal>li:hover {
@@ -55,11 +56,11 @@
 }
 
 .menu-vertical {
-    position: fixed;
     display: none;
+    position: fixed;
     list-style: none;
-    width: 200px;
-    background-color: rgba(0, 0, 0, .5);
+    top:70px;
+    background-color: var(--fondo);
 }
 
 .menu-horizontal li:hover .menu-vertical {
@@ -67,12 +68,10 @@
 }
 
 .menu-vertical li:hover {
-    background-color: black;
+    background-color: var(--fondo);
 }
 
-.menu-vertical li a {
+.menu-vertical li .link {
     display: block;
-    color: white;
-    text-decoration: none;
     padding: 15px 15px 15px 20px;
 }
