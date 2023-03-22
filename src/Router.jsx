@@ -10,7 +10,6 @@ import {
 
 import Root from './routes/root'
 import ErrorPage from './components/error-page'
-import General from './components/general/General'
 
 
 const router = createBrowserRouter([

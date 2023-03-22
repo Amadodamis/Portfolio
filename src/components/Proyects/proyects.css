@@ -50,8 +50,6 @@
 .proyects-name:hover {
     border: 1px var(--secondary-color) solid;
     background-color: var(--secondary-color);
-
-
 }
 
 /************************************************************** PROYECTS DEV************************************************/
@@ -196,13 +194,49 @@
 .proyectsCheff {
     height: 100vh;
     width: 100%;
-    background-image: url('../../img/background/cook2.jpg');
-    background-repeat: no-repeat;
+    overflow: hidden;
     background-size: cover;
+    transition: 0.4s;
 }
 
-.proyectsCheff section {
+.overlay-proyectoCheff {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
-    width: 100%;
+    background-color: var(--overlay2);
+}
 
+
+
+
+/*****************************SLIDER******************/
+.slider-container {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    height: 600px;
+    width: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    transition: 0.4s ease;
+}
+
+
+.arrow { 
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.container-arrows{
+    display: flex;
 }
