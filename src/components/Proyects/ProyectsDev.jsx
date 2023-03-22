@@ -17,34 +17,25 @@ export default function ProyectsDev() {
     return (
         <div className='proyectsDev' id="developer" ><div className='overlay filter'>
             <section className="section-proyects">
-
                 <div className="title-list-desc">
-
                     <h1 className="title-proyects">
                         DEVELOPER
                     </h1>
-
                     <ListaProyectos
                         proyectos={proyectosDev}
                         proyectoActual={proyectoDevActual} setProyectoActual={setProyectoDevActual}
                     />
-
                     <DescriptionProyect
                         proyectoDevActual={proyectoDevActual}
-
-
                     />
-
                 </div>
                 <GithubButton
                     title={proyectoDevActual.title}
                     proyectoDevActual={proyectoDevActual}
                 />
-
-                <VideoComponent />
-
+                 <VideoComponent />
+                 
             </section>
         </div></div>
     )
 }
-

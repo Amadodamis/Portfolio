@@ -19,13 +19,6 @@
 }
 
 
-.section-proyects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
 
 .title-proyects {
     font-size: 4rem;
@@ -72,10 +65,14 @@
 }
 
 
-.proyectsDev section {
+.section-proyects {
     height: 100vh;
     width: 100%;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .description-proyecto-actual {
@@ -131,6 +128,68 @@
     width: 30px;
     height: 30px;
 }
+
+
+@media (max-width: 800px) {
+    .section-proyects {
+        justify-content: space-between;
+    }
+
+    .title-list-desc {
+        height: auto;
+    }
+
+    .title-proyects {
+        font-size: 3rem;
+    }
+
+    .lista-proyectos {
+        flex-direction: column;
+        width: 50%;
+
+    }
+
+    .proyects-name {
+        font-size: 0.8rem;
+        font-weight: 500;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 3px;
+        text-align: center;
+    }
+
+    .description-proyecto-actual {
+        border-radius: 15px;
+        padding: 15px;
+        width: 80%;
+    }
+
+    .description-proyecto-actual p {
+        font-size: 0.9rem;
+    }
+
+    .container-links {
+        flex-direction: column;
+    }
+
+    .p-repo {
+        font-size: 0.8rem;
+        font-weight: 200;
+    }
+
+    .github-icon-link-repo {
+        width: 20px;
+        height: 20px;
+    }
+
+    .react__player {
+        max-width: 80%;
+        max-height: 250px;
+    }
+}
+
+
+
 
 
 /************************************************************** PROYECTS CHEFF************************************************/
