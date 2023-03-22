@@ -6,6 +6,8 @@ import { proyectosDev } from "../../JS/data"
 
 import ListaProyectos from "./ListaProyectosDev"
 import DescriptionProyect from "./DescriptionProyect"
+import VideoComponent from "./VideoComponent"
+
 
 export default function ProyectsDev() {
 
@@ -31,9 +33,9 @@ export default function ProyectsDev() {
                         proyectoDevActual={proyectoDevActual}
                     />
 
-
-
                 </div>
+                
+                <VideoComponent />
 
             </section>
         </div></div>
