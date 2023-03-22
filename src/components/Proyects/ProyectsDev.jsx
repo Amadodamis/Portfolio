@@ -7,7 +7,7 @@ import { proyectosDev } from "../../JS/data"
 import ListaProyectos from "./ListaProyectosDev"
 import DescriptionProyect from "./DescriptionProyect"
 import VideoComponent from "./VideoComponent"
-
+import GithubButton from "./GithubButton"
 
 export default function ProyectsDev() {
 
@@ -21,7 +21,7 @@ export default function ProyectsDev() {
                 <div className="title-list-desc">
 
                     <h1 className="title-proyects">
-                        Proyectos como desarrollador
+                        DEVELOPER
                     </h1>
 
                     <ListaProyectos
@@ -31,13 +31,20 @@ export default function ProyectsDev() {
 
                     <DescriptionProyect
                         proyectoDevActual={proyectoDevActual}
+
+
                     />
 
                 </div>
-                
+                <GithubButton
+                    title={proyectoDevActual.title}
+                    proyectoDevActual={proyectoDevActual}
+                />
+
                 <VideoComponent />
 
             </section>
         </div></div>
     )
 }
+

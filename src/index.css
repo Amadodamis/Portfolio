@@ -8,6 +8,7 @@ body {
   --primary-color: #282c34;
   --secondary-color: #b94429;
   --overlay:rgba(40, 44, 52, 0.2);
+  --overlay2:rgba(40, 44, 52, 0.6);
   --fondo: rgba(40, 44, 52, 0.9);
   --fontTitle: 'Roboto', sans-serif;
   --fontText: 'Montserrat', sans-serif;

@@ -9,7 +9,7 @@ export default function ProyectsCheff() {
         <div className='proyectsCheff' id="cheff"><div className='overlay filter'>
             <section>
                 <h1 className="title-proyects">
-                    Proyectos como cheff
+                    CHEFF
                 </h1>
 
 
