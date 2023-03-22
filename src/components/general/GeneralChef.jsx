@@ -2,7 +2,15 @@ import fotoCheff from "../../img/cocinero.jpg"
 import { tituloG, textoG } from "../../JS/dataBanner"
 
 
-export default function GeneralChef({ right, addRight, removeRight }) {
+export default function GeneralChef({ right, addRight, removeRight, proyecto, setProyecto }) {
+
+    const changeProyect = (e) => {
+        let name = e.target.getAttribute('name');
+        if (proyecto !== name) {
+            setProyecto(name)
+        }
+    }
+
     return (
         <div className="split right" ref={right} onMouseEnter={addRight} onMouseLeave={removeRight}  >
 
@@ -12,7 +20,9 @@ export default function GeneralChef({ right, addRight, removeRight }) {
                 <h2>{tituloG}</h2>
                 <p>{textoG}</p>
             </div>
-            <div className="btn">Proyectos</div>
+            <a href="#cheff">
+                <div className="btn" onClick={changeProyect} name="cheff">Proyectos</div>
+            </a>
         </div>
     )
 }

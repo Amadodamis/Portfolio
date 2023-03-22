@@ -3,7 +3,7 @@ import { useRef } from "react"
 import GeneralChef from "./GeneralChef"
 import GeneralDev from "./GeneralDev"
 
-export default function General() {
+export default function General({ proyecto, setProyecto }) {
     const container = useRef(null)
     const left = useRef(null)
     const right = useRef(null)
@@ -30,9 +30,11 @@ export default function General() {
             <div className="container" ref={container}>
                 <GeneralDev left={left}
                     addLeft={addLeft} removeLeft={removeLeft}
+                    proyecto={proyecto} setProyecto={setProyecto}
                 />
                 <GeneralChef right={right}
                     addRight={addRight} removeRight={removeRight}
+                    proyecto={proyecto} setProyecto={setProyecto}
                 />
             </div>
         </div>

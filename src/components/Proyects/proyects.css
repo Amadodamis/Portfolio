@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+}
+
+
+.filter {
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    background-color: rgba(243, 243, 243, 0.2);
+}
+
+.overlay {
+    background-color: var(--overlay);
+    height: 100vh;
+    width: 100%;
+}
+
+.section-proyects {}
+
+
+.title-proyects {
+    font-size: 4rem;
+    font-family: var(--fontTitle);
+    color: white;
+    font-weight: 600;
+
+}
+
+
+.lista-proyectos {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+
+}
+
+.proyects-name {
+    font-size: 1rem;
+    color: white;
+    font-family: var(--fontText);
+    cursor: pointer;
+    font-weight: 800;
+    border: 1px white solid;
+    padding: 8px;
+}
+
+.proyects-name:hover {
+    border: 1px var(--secondary-color) solid;
+    background-color: var(--secondary-color);
+
+}
+
+/************************************************************** PROYECTS DEV************************************************/
+
+.proyectsDev {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../../img/background/coding.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.proyectsDev section {
+    height: 100vh;
+    width: 100%;
+
+}
+
+.description-proyecto-actual {
+    background-color: var(--overlay);
+    border: 1px var(--fondo) solid;
+    border-radius: 15px;
+    padding: 15px;
+    width: 80%;
+}
+
+.description-proyecto-actual p {
+    color: white;
+    font-weight: 200;
+    font-family: var(--fontText);
+    font-size: 1rem;
+}
+
+.title-list-desc {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+
+
+/************************************************************** PROYECTS CHEFF************************************************/
+.proyectsCheff {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../../img/background/cook2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.proyectsCheff section {
+    height: 100vh;
+    width: 100%;
+
+}
