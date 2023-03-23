@@ -17,13 +17,3 @@ export default function General({ proyecto, setProyecto }) {
         </div>
     )
 }
-
-/*
-
-  <GeneralChef 
-                    proyecto={proyecto} setProyecto={setProyecto}
-                />
-            
-
-
-*/

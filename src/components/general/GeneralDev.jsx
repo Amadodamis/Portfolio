@@ -1,7 +1,10 @@
 
 import fotoDeveloper from "../../img/fotocv.jpg"
 import { tituloDev, textoDev } from "../../JS/dataBanner"
+
 import Icons from "./Icons"
+import LinksPersonales from "./LinksPersonales"
+
 
 export default function GeneralDev({ proyecto, setProyecto }) {
 
@@ -19,11 +22,14 @@ export default function GeneralDev({ proyecto, setProyecto }) {
 
             <img src={fotoDeveloper} alt={"foto-developers"} className="foto-general" />
 
+            <LinksPersonales />
+
             <div className='description'>
                 <h2>{tituloDev}</h2>
                 <p className="texto-descripcion">{textoDev}</p>
                 <Icons />
             </div>
+
             <a href="#developer">
                 <div className="btn" onClick={changeProyect} name="developer">Proyectos</div>
             </a>
