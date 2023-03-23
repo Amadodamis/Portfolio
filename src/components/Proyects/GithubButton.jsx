@@ -11,7 +11,8 @@ export default function GithubButton({ title, proyectoDevActual }) {
         <div className='container-links'>
             {
                 links.map((link, i) =>
-                    <Link to={link} className="link" key={i}>
+                    <Link to={link} className="link" key={i} target="_blank" rel="noopener noreferrer"
+                    >
                         <div className="container-repo">
                             <p className="p-repo">{linkTitle[i]}</p>
                             <img src={exportIcon} alt="github-icon" className='github-icon-link-repo' />

@@ -2,42 +2,25 @@ import "./proyects.css"
 
 import { useState, useEffect } from "react"
 
-import { panaderoArray, cocineroArray, pasteleroArray } from "../../JS/dataCoPasPan"
-
+import { changeRolImageCheff, inicializacionRol } from "../../JS/changeRolImageCheff"
 
 import Arrows from "./CheffComponents/arrows"
 import SlideActual from "./CheffComponents/slideActual"
 import Rol from "./CheffComponents/Rol"
 
+
+
 export default function ProyectsCheff() {
 
-    const [rol, setRol] = useState("cocinero")
-    const [arrayProfesion, setArrayProfesion] = useState(cocineroArray)
+    const [rol, setRol] = useState("Cocinero")
+    const [arrayProfesion, setArrayProfesion] = useState(inicializacionRol())
     const [bodyBackground, setbodyBackground] = useState(arrayProfesion[0])
     const [imageActual, setImageActual] = useState(arrayProfesion[0])
 
     useEffect(() => {
-        if (rol === "Cocinero") {
-            setImageActual(cocineroArray[0])
-            setbodyBackground(cocineroArray[0])
-            setArrayProfesion(cocineroArray)
-        } else {
-
-            if (rol === "Pastelero") {
-                setImageActual(pasteleroArray[0])
-                setbodyBackground(pasteleroArray[0])
-                setArrayProfesion(pasteleroArray)
-            } else {
-                setImageActual(panaderoArray[0])
-                setbodyBackground(panaderoArray[0])
-                setArrayProfesion(panaderoArray)
-            }
-        }
-
-
+        console.log("entre")
+        changeRolImageCheff(rol, setImageActual, setbodyBackground, setArrayProfesion)
     }, [rol])
-
-
 
     return (
         <div className='proyectsCheff' id="cheff" style={bodyBackground}>
