@@ -11,7 +11,7 @@ import GithubButton from "./GithubButton"
 
 export default function ProyectsDev() {
 
-    const [proyectoDevActual, setProyectoDevActual] = useState(proyectosDev[0])
+    const [proyectoDevActual, setProyectoDevActual] = useState(proyectosDev[2])
 
 
     return (
@@ -28,13 +28,14 @@ export default function ProyectsDev() {
                     <DescriptionProyect
                         proyectoDevActual={proyectoDevActual}
                     />
+
+                    <GithubButton
+                        title={proyectoDevActual.title}
+                        proyectoDevActual={proyectoDevActual}
+                    />
                 </div>
-                <GithubButton
-                    title={proyectoDevActual.title}
-                    proyectoDevActual={proyectoDevActual}
-                />
-                 <VideoComponent />
-                 
+
+                <VideoComponent />
             </section>
         </div></div>
     )

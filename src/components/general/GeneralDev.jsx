@@ -3,7 +3,7 @@ import fotoDeveloper from "../../img/fotocv.jpg"
 import { tituloDev, textoDev } from "../../JS/dataBanner"
 import Icons from "./Icons"
 
-export default function GeneralDev({ left, addLeft, removeLeft, proyecto, setProyecto }) {
+export default function GeneralDev({ proyecto, setProyecto }) {
 
     const changeProyect = (e) => {
         let name = e.target.getAttribute('name');
@@ -14,7 +14,7 @@ export default function GeneralDev({ left, addLeft, removeLeft, proyecto, setPro
 
 
     return (
-        <div className="split left" ref={left} onMouseEnter={addLeft} onMouseLeave={removeLeft} >
+        <div className="split left"  ><div className="overlay">
             <h1 className="title-rol">DEVELOPER</h1>
 
             <img src={fotoDeveloper} alt={"foto-developers"} className="foto-general" />
@@ -27,6 +27,6 @@ export default function GeneralDev({ left, addLeft, removeLeft, proyecto, setPro
             <a href="#developer">
                 <div className="btn" onClick={changeProyect} name="developer">Proyectos</div>
             </a>
-        </div>
+        </div></div>
     )
 }
