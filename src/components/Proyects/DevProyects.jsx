@@ -2,7 +2,7 @@ import "./proyects.css"
 
 import { useState } from "react"
 
-import { proyectosDev } from "../../JS/data"
+import { proyectosDev } from "../../JS/arraysProyectos"
 
 import ListaProyectos from "./DevComponents/ListaProyectosDev"
 import DescriptionProyect from "./DevComponents/DescriptionProyect"

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-export default function LinksPersonales() {
+export default function LinksPersonalesDev() {
 
 
   let linkCvDes = "https://drive.google.com/file/d/14a5Duaq8BFCXHzjRf88C6tfEAyaGdIni/view?usp=sharing"

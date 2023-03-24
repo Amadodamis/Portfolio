@@ -1,6 +1,6 @@
 import { Link as LinkScroll } from "react-scroll"
 import fotoCheff from "../../img/cocinero.jpg"
-import { tituloG, textoG } from "../../JS/dataBanner"
+import { tituloG, textoG } from "../../JS/dataGeneral"
 
 
 export default function GeneralChef({ proyecto, setProyecto }) {

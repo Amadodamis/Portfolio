@@ -1,6 +1,6 @@
 import React from 'react'
-import icons from "../../JS/icons"
-export default function Icons() {
+import icons from "../../JS/arrayIconsGeneralDev"
+export default function IconsGeneralDev() {
     return (
         <div className='container-icons-general'>
             {

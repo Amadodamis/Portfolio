@@ -1,4 +1,4 @@
-import { panaderoArray, pasteleroArray, cocineroArray } from "./dataCoPasPan"
+import { panaderoArray, pasteleroArray, cocineroArray } from "./arrayImagesGastronomia"
 
 
 function changeRolImageCheff(rol, setImageActual, setbodyBackground, setArrayProfesion) {
