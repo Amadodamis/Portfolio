@@ -1,4 +1,4 @@
-
+import { Link as LinkScroll } from "react-scroll"
 import fotoDeveloper from "../../img/fotocv.jpg"
 import { tituloDev, textoDev } from "../../JS/dataBanner"
 
@@ -30,9 +30,9 @@ export default function GeneralDev({ proyecto, setProyecto }) {
                 <Icons />
             </div>
 
-            <a href="#developer">
+            <LinkScroll to="developer" smooth={true} duration={500}>
                 <div className="btn" onClick={changeProyect} name="developer">Proyectos</div>
-            </a>
+            </LinkScroll>
         </div></div>
     )
 }

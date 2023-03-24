@@ -1,6 +1,8 @@
 import "./footer.css"
 
 import { Link } from "react-router-dom"
+import {Link as LinkScroll} from "react-scroll"
+
 
 import gitHubIcon from "../img/icons-footer/github.png"
 import linkedinIcon from "../img/icons-footer/linkedin.png"
@@ -17,9 +19,9 @@ export default function Footer() {
             <div className='footer-content'>
                 <ul className="socials">
                     <li>
-                        <a href="#">
+                        <LinkScroll to="root" smooth={true} duration={500}>
                             <img src={topIcon} alt={'topIcon'} className={'icon-footer'} />
-                        </a>
+                        </LinkScroll>
                     </li>
 
                     <li>

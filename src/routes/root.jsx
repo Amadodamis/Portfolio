@@ -15,7 +15,7 @@ export default function Root() {
     if (proyecto === null) return <General proyecto={proyecto} setProyecto={setProyecto} />
 
     return (
-        <div className='root'>
+        <div className='root' id="root">
             <General
                 proyecto={proyecto} setProyecto={setProyecto}
             />
