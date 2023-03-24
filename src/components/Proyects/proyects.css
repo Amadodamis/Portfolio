@@ -236,6 +236,7 @@
     width: 850px;
     position: relative;
     overflow: hidden;
+    margin-top: 25px;
 }
 
 .slide {
@@ -249,12 +250,49 @@
 
 
 .arrow {
-    padding: 10px;
-    width: 30px;
-    height: 30px;
+
+    width: 40px;
+    height: 40px;
     cursor: pointer;
+    
 }
+
+
 
 .container-arrows {
     display: flex;
+    margin: 10px;
+    width: 90px;
+    height: 45px;
+    justify-content: space-between;
+}
+
+
+@media (max-width: 800px) {
+    .overlay-proyectoCheff {
+        justify-content: space-around;
+    }
+
+    .slider-container {
+        margin-top: 0px;
+        height: 550px;
+        width: 95%;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .overlay-proyectoCheff {
+        justify-content: space-around;
+    }
+
+    .slider-container {
+        margin-top: 0px;
+        height: 240px;
+        width: 95%;
+        position: relative;
+        overflow: hidden;
+    }
 }
