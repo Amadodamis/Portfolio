@@ -4,10 +4,10 @@ import { useState } from "react"
 
 import { proyectosDev } from "../../JS/data"
 
-import ListaProyectos from "./ListaProyectosDev"
-import DescriptionProyect from "./DescriptionProyect"
-import VideoComponent from "./VideoComponent"
-import GithubButton from "./GithubButton"
+import ListaProyectos from "./DevComponents/ListaProyectosDev"
+import DescriptionProyect from "./DevComponents/DescriptionProyect"
+import VideoComponent from "./DevComponents/VideoComponent"
+import GithubButton from "./DevComponents/GithubButton"
 
 export default function ProyectsDev() {
 
@@ -18,13 +18,16 @@ export default function ProyectsDev() {
         <div className='proyectsDev' id="developer" ><div className='overlay filter'>
             <section className="section-proyects">
                 <div className="title-list-desc">
+                
                     <h1 className="title-proyects">
                         DEVELOPER
                     </h1>
+
                     <ListaProyectos
                         proyectos={proyectosDev}
                         proyectoActual={proyectoDevActual} setProyectoActual={setProyectoDevActual}
                     />
+
                     <DescriptionProyect
                         proyectoDevActual={proyectoDevActual}
                     />
@@ -33,6 +36,7 @@ export default function ProyectsDev() {
                         title={proyectoDevActual.title}
                         proyectoDevActual={proyectoDevActual}
                     />
+
                 </div>
 
                 <VideoComponent />

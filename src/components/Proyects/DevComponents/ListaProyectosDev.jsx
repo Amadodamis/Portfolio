@@ -1,4 +1,4 @@
-import getProyecto from "../../JS/getProyecto";
+import getProyecto from "../../../JS/getProyecto";
 
 export default function ListaProyectos({ proyectos, proyectoActual, setProyectoActual }) {
 
