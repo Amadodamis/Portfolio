@@ -3,9 +3,9 @@ import { Link } from "react-router-dom"
 export default function LinksPersonalesDev() {
 
 
-  let linkCvDes = "https://drive.google.com/file/d/14a5Duaq8BFCXHzjRf88C6tfEAyaGdIni/view?usp=sharing"
+  let linkCvDes = "https://docs.google.com/document/d/1sDtrRxtanHioWNvT9k_Oz44RRCZUeMVFBxigP4Q4cQo/edit?usp=sharing"
 
-  let linkCvDev = "https://drive.google.com/file/d/1XSxHOP81Fys0F373Svj722YCylvE1u_1/view?usp=sharing"
+  let linkCvDev = "https://docs.google.com/document/d/1CUxRAFnUR0U_LNMFAcHwjlmMxAoQ0Gk1crTNWys6jzw/edit?usp=sharing"
 
   let linkGithub = "https://github.com/Amadodamis"
 

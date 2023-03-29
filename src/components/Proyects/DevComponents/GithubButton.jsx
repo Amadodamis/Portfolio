@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import gitHubIcon from "../../../img/icons-footer/github.png"
-import exportIcon from "../../../img/export.png"
+
 
 
 export default function GithubButton({ title, proyectoDevActual }) {
@@ -15,7 +15,7 @@ export default function GithubButton({ title, proyectoDevActual }) {
                     >
                         <div className="container-repo">
                             <p className="p-repo">{linkTitle[i]}</p>
-                            <img src={exportIcon} alt="github-icon" className='github-icon-link-repo' />
+                            
                             <img src={gitHubIcon} alt="github-icon" className='github-icon-link-repo' />
 
                         </div>

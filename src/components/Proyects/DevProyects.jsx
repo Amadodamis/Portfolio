@@ -13,12 +13,12 @@ export default function ProyectsDev() {
 
     const [proyectoDevActual, setProyectoDevActual] = useState(proyectosDev[2])
 
-
+    console.log(proyectoDevActual)
     return (
         <div className='proyectsDev' id="developer" ><div className='overlay filter'>
             <section className="section-proyects">
                 <div className="title-list-desc">
-                
+
                     <h1 className="title-proyects">
                         DEVELOPER
                     </h1>
@@ -39,7 +39,16 @@ export default function ProyectsDev() {
 
                 </div>
 
-                <VideoComponent />
+                {proyectoDevActual.youtubeLink !== "" ?
+
+                    <VideoComponent
+                        url={proyectoDevActual.youtubeLink}
+                    />
+                    :
+                    <img src={proyectoDevActual.imgLink} alt='foto-proyecto-dev' className='foto-proyecto-dev' />
+
+                }
+
             </section>
         </div></div>
     )

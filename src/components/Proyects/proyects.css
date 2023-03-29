@@ -142,7 +142,10 @@
     height: 30px;
 }
 
-
+.foto-proyecto-dev {
+    height: 550px;
+    width: 1000px;
+}
 
 
 @media (max-width: 800px) {
@@ -254,7 +257,7 @@
     width: 40px;
     height: 40px;
     cursor: pointer;
-    
+
 }
 
 
