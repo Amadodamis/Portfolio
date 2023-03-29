@@ -1,7 +1,9 @@
-export default function DescriptionProyect({ proyectoDevActual }) {
+export default function DescriptionProyect({ proyectoDevActual, leng }) {
     return (
         <div className="description-proyecto-actual">
-            <p>{proyectoDevActual.texto}</p>
+            <p>
+                {leng === "ESP" ? proyectoDevActual.texto : proyectoDevActual.text}
+            </p>
         </div>
     )
 }

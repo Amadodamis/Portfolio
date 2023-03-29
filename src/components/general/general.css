@@ -3,6 +3,24 @@
     margin: 0;
 }
 
+.iconos-leng-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+.icon-leng {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.active-icon{
+    width: 45px;
+    height: 45px;
+}
 
 .title-rol {
     position: absolute;

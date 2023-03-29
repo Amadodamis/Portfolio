@@ -9,18 +9,18 @@ import DescriptionProyect from "./DevComponents/DescriptionProyect"
 import VideoComponent from "./DevComponents/VideoComponent"
 import GithubButton from "./DevComponents/GithubButton"
 
-export default function ProyectsDev() {
+export default function ProyectsDev({ leng }) {
 
     const [proyectoDevActual, setProyectoDevActual] = useState(proyectosDev[2])
 
-    console.log(proyectoDevActual)
+
     return (
         <div className='proyectsDev' id="developer" ><div className='overlay filter'>
             <section className="section-proyects">
                 <div className="title-list-desc">
 
                     <h1 className="title-proyects">
-                        DEVELOPER
+                        {leng==="ESP"?"DESARROLLADOR":"DEVELOPER"}
                     </h1>
 
                     <ListaProyectos
@@ -30,6 +30,7 @@ export default function ProyectsDev() {
 
                     <DescriptionProyect
                         proyectoDevActual={proyectoDevActual}
+                        leng={leng}
                     />
 
                     <GithubButton

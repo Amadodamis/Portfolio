@@ -10,7 +10,7 @@ import Rol from "./CheffComponents/Rol"
 
 
 
-export default function ProyectsCheff() {
+export default function ProyectsCheff({ leng }) {
 
     const [rol, setRol] = useState("Cocinero")
     const [arrayProfesion, setArrayProfesion] = useState(inicializacionRol())
@@ -18,7 +18,6 @@ export default function ProyectsCheff() {
     const [imageActual, setImageActual] = useState(arrayProfesion[0])
 
     useEffect(() => {
-        console.log("entre")
         changeRolImageCheff(rol, setImageActual, setbodyBackground, setArrayProfesion)
     }, [rol])
 
@@ -26,11 +25,12 @@ export default function ProyectsCheff() {
         <div className='proyectsCheff' id="cheff" style={bodyBackground}>
             <div className='overlay-proyectoCheff'>
 
-                <h1 className="title-proyects"> CHEFF</h1>
+                <h1 className="title-proyects"> CHEF</h1>
 
                 <Rol
                     rol={rol}
                     setRol={setRol}
+                    leng={leng}
                 />
 
 
