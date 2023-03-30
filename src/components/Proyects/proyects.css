@@ -143,8 +143,8 @@
 }
 
 .foto-proyecto-dev {
-    height: 550px;
-    width: 1000px;
+    height: 50%;
+    width: 50%;
 }
 
 
@@ -283,6 +283,10 @@
         position: relative;
         overflow: hidden;
     }
+    .foto-proyecto-dev{
+        height: 450px;
+        width: 95%;
+    }
 }
 
 @media (max-width: 450px) {
@@ -297,5 +301,28 @@
         width: 95%;
         position: relative;
         overflow: hidden;
+    }
+    .foto-proyecto-dev{
+        height: 240px;
+        width: 95%;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .title-proyects {
+        font-size: 2rem;
+      
+    
+    }
+ 
+    .foto-proyecto-dev{
+        height: 200px;
+        width: 95%;
+    }
+
+    .react__player {
+        max-width: 95%;
+        max-height: 280px;
     }
 }
