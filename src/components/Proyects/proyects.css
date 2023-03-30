@@ -205,6 +205,8 @@
         max-width: 80%;
         max-height: 320px;
     }
+
+   
 }
 
 
@@ -329,4 +331,11 @@
         max-width: 95%;
         max-height: 280px;
     }
+    
+    .container-repo {
+        padding: 5px;
+        margin: 2px;
+    }
+
+
 }

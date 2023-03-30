@@ -10,9 +10,8 @@ lograrmos superar las pruebas y resolver todos los problemas que nos iban surgie
  cookies, session, SQL con DBeaver y Xampp, y EJS como template para el front-end.`
 
 let fabaEng = `Fabastore was my final project in the full-stack course at Digital House. With two classmates, 
-we managed to create an e-commerce website. Although it is not very aesthetic and has many errors,
- we passed the tests and solved the errors that arose. We used Node.js with express for the back-end , cookies, session, Sql with Dbeaver Xampp, 
- and EJS as a template for the front-end.`
+we managed to create an e-commerce website. Although it is not very aesthetic and has many errors,we passed the tests and solved the errors that arose. 
+We used Node.js with express for the back-end , cookies, session, Sql with Dbeaver Xampp, and EJS as a template for the front-end.`
 
 let fabaLink = "https://github.com/Amadodamis/grupo_6_fabaStore"
 
