@@ -12,22 +12,8 @@ export default function Root() {
     //Proyecto almacena la view que esta debajo de la principal
     //Si es null, la view que esta abajo no se renderiza
     //La view solo se muestra si el usuario setea para ver los proyectos como dev, o como cheff. 
-    const [proyecto, setProyecto] = useState(null)
+    const [proyecto, setProyecto] = useState("developer")
     const [leng, setLeng] = useState("ESP")
-
-    
-
-
-    if (proyecto === null) return (
-        <div className='root' id="root">
-            <General proyecto={proyecto} setProyecto={setProyecto}
-                leng={leng}
-            />
-            <IconsLeng
-                leng={leng} setLeng={setLeng}
-            />
-        </div>
-    )
 
     return (
 
