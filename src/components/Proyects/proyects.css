@@ -306,6 +306,10 @@
         height: 240px;
         width: 95%;
     }
+    .react__player {
+        max-width: 95%;
+        max-height: 230px;
+    }
 }
 
 
